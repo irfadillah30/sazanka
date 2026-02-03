@@ -1,158 +1,346 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sazanka Class | Privat Bahasa Jepang</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Sazanka Class | Kelas Bahasa Jepang</title>
 
-  <style>
-    /* ===== BODY + WATERMARK BACKGROUND ===== */
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #333;
+<style>
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:
+    linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)),
+    url("447514514_1057484309280715_5872012502585721037_n.jpg");
+  background-size:cover;
+  background-position:center;
+}
 
-      background:
-        linear-gradient(rgba(255,255,255,0.93), rgba(255,255,255,0.93)),
-        url("447514514_1057484309280715_5872012502585721037_n.jpg");
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:40px 20px;
+}
 
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-    }
+.hero{
+  text-align:center;
+  padding:80px 20px;
+  background:linear-gradient(135deg,#ff6b6b,#ff9f43);
+  color:white;
+  border-radius:20px;
+}
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
-    }
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:25px;
+  margin-top:50px;
+}
 
-    /* ===== HERO ===== */
-    .hero {
-      text-align: center;
-      padding: 90px 20px;
-      background: linear-gradient(135deg, #ff6b6b, #ff9f43);
-      color: white;
-      border-radius: 24px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-    }
+.card{
+  background:white;
+  padding:25px;
+  border-radius:18px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
 
-    .hero h1 {
-      font-size: 44px;
-      margin-bottom: 10px;
-    }
+.card h3{
+  margin-top:0;
+}
 
-    .hero p {
-      font-size: 18px;
-      margin: 10px 0 25px;
-    }
+.price{
+  font-size:22px;
+  font-weight:bold;
+  color:#ff6b6b;
+  margin:10px 0;
+}
 
-    /* ===== BUTTON ===== */
-    .btn {
-      display: inline-block;
-      padding: 14px 28px;
-      background: white;
-      color: #ff6b6b;
-      font-weight: bold;
-      border-radius: 12px;
-      text-decoration: none;
-      transition: 0.25s;
-    }
+ul{
+  text-align:left;
+  padding-left:18px;
+  font-size:14px;
+}
 
-    .btn:hover {
-      transform: scale(1.06);
-    }
+.btn{
+  display:block;
+  margin-top:15px;
+  padding:12px;
+  text-align:center;
+  background:#ff6b6b;
+  color:white;
+  border-radius:10px;
+  cursor:pointer;
+}
 
-    /* ===== SECTION ===== */
-    section {
-      margin-top: 80px;
-      text-align: center;
-    }
+/* ===== MODAL ===== */
+.modal{
+  display:none;
+  position:fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background:rgba(0,0,0,.5);
+  justify-content:center;
+  align-items:center;
+}
 
-    h2 {
-      font-size: 30px;
-      margin-bottom: 30px;
-    }
+.modal-box{
+  background:white;
+  padding:25px;
+  border-radius:14px;
+  text-align:center;
+}
 
-    /* ===== CARD GRID ===== */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 18px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-      font-size: 16px;
-    }
-
-    .price {
-      font-size: 36px;
-      font-weight: bold;
-      color: #ff6b6b;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 80px;
-      padding: 30px;
-      font-size: 14px;
-      color: gray;
-    }
-  </style>
+input{
+  padding:10px;
+  width:90%;
+  margin-top:10px;
+}
+</style>
 </head>
 
 <body>
 
-  <div class="container">
+<div class="container">
 
-    <!-- HERO -->
-    <div class="hero">
-      <h1>🌸 Sazanka Class</h1>
-      <p>Belajar Bahasa Jepang dengan santai, terarah, dan siap lulus JLPT tahun ini</p>
-      <a class="btn" href="https://wa.me/628123970898">Daftar via WhatsApp</a>
+<div class="hero">
+  <h1>🌸 Sazanka Class</h1>
+  <p>Kelas intensif Bahasa Jepang • Fokus lulus JLPT & Kaiwa aktif</p>
+</div>
+
+
+<div class="grid">
+
+  <!-- REGULER -->
+    <div class="card">
+    <h3>Reguler N3 + (fukushu N4) </h3>
+    <div class="price">¥18.000 / Rp 2.000.000 (Bayar sekali, Belajar 3 bulan (+simulasi & latihan sebelum ujian)</div>
+
+    <ul>
+      <li>Belajar intensif Zoom 8x/bulan</li>
+      <li>Modul lengkap disediakan</li>
+      <li>Pre & Post test</li>
+      <li>Jam fleksibel (shift friendly)</li>
+      <li>Free soal JLPT + tips trik</li>
+      <li>2 jam per sesi</li>
+      <li>7–10 peserta / 1 mentor</li>
+      <li>Latihan kaiwa aktif</li>
+      <li>Tugas harian kanji & bunpou</li>
+      <li>Reibung + Google Form + tulis tangan</li>
+    </ul>
+
+    <div class="btn" onclick="daftar('Reguler N3 + (fukushu N4)')">Daftar</div>
+  </div>
+  
+  <div class="card">
+    <h3>Reguler N3</h3>
+    <div class="price">¥13.000 / Rp 1.600.000 (Bayar sekali, Belajar 3 bulan (+simulasi & latihan sebelum ujian)</div>
+
+    <ul>
+      <li>Belajar intensif Zoom 8x/bulan</li>
+      <li>Modul lengkap disediakan</li>
+      <li>Pre & Post test</li>
+      <li>Jam fleksibel (shift friendly)</li>
+      <li>Free soal JLPT + tips trik</li>
+      <li>2 jam per sesi</li>
+      <li>7–10 peserta / 1 mentor</li>
+      <li>Latihan kaiwa aktif</li>
+      <li>Tugas harian kanji & bunpou</li>
+      <li>Reibung + Google Form + tulis tangan</li>
+    </ul>
+
+    <div class="btn" onclick="daftar('Reguler N3')">Daftar</div>
+  </div>
+
+    <div class="card">
+    <h3>Reguler N2</h3>
+    <div class="price">¥15.000 / Rp 1.800.000 (Bayar sekali, Belajar 3 bulan (+simulasi & latihan sebelum ujian)</div>
+
+    <ul>
+      <li>Belajar intensif Zoom 8x/bulan</li>
+      <li>Modul lengkap disediakan</li>
+      <li>Pre & Post test</li>
+      <li>Jam fleksibel (shift friendly)</li>
+      <li>Free soal JLPT + tips trik</li>
+      <li>2 jam per sesi</li>
+      <li>7–10 peserta / 1 mentor</li>
+      <li>Latihan kaiwa aktif</li>
+      <li>Tugas harian kanji & bunpou</li>
+      <li>Reibung + Google Form + tulis tangan</li>
+    </ul>
+
+    <div class="btn" onclick="daftar('Reguler N2')">Daftar</div>
+  </div>
+
+
+  <!-- PRIVAT -->
+  <div class="card">
+    <h3>Semi Privat N4</h3>
+    <div class="price">¥7.000 / Rp. 900.000 (Per 3 Bulan)</div>
+
+    <ul>
+      <li>Belajar intensif by zoom 6x sebulan selama 3 bulan</li>
+      <li>Modul yang telah disediakan</li>
+      <li>Ada Pre & post tes</li>
+      <li>Jam belajar fleksibel (disesuaikan sama jadwal shift member & mentor)</li>
+      </li>Free soal JLPT yang lalu (tips & triknya) setelah 3 bulan kelas intensif kemudian gabung dengan kelas grup </li>
+      </li>sekali belajar 2 jam by zoom</li>
+      </li>Belajar 1 mentor : 3 member</li>
+      </li>Kesempatan meningkatkan kaiwa</li>
+      </li>Ada tugas harian (kanji, bunpou, dll)</li>
+      </li>Tugas di via zoom seperti bikin reibung, online (isi google form) & tulis  (kanji & bunpou)</li>
+      
+    </ul>
+
+    <div class="btn" onclick="daftar('Semi Privat N4')">Daftar</div>
+  </div>
+
+    <div class="card">
+    <h3>Semi Privat N3</h3>
+    <div class="price">¥10.000 / Rp. 1.300.000 (Per 3 Bulan)</div>
+
+    <ul>
+      <li>Belajar intensif by zoom 6x sebulan selama 3 bulan</li>
+      <li>Modul yang telah disediakan</li>
+      <li>Ada Pre & post tes</li>
+      <li>Jam belajar fleksibel (disesuaikan sama jadwal shift member & mentor)</li>
+      </li>Free soal JLPT yang lalu (tips & triknya) setelah 3 bulan kelas intensif kemudian gabung dengan kelas grup </li>
+      </li>sekali belajar 2 jam by zoom</li>
+      </li>Belajar 1 mentor : 3 member</li>
+      </li>Kesempatan meningkatkan kaiwa</li>
+      </li>Ada tugas harian (kanji, bunpou, dll)</li>
+      </li>Tugas di via zoom seperti bikin reibung, online (isi google form) & tulis  (kanji & bunpou)</li>
+      
+    </ul>
+
+    <div class="btn" onclick="daftar('Semi Privat N3')">Daftar</div>
+  </div>
+
+    <div class="card">
+    <h3>Semi Privat N2</h3>
+    <div class="price">¥13.000 / Rp. 1.600.000 (Per 3 Bulan)</div>
+
+    <ul>
+      <li>Belajar intensif by zoom 6x sebulan selama 3 bulan</li>
+      <li>Modul yang telah disediakan</li>
+      <li>Ada Pre & post tes</li>
+      <li>Jam belajar fleksibel (disesuaikan sama jadwal shift member & mentor)</li>
+      </li>Free soal JLPT yang lalu (tips & triknya) setelah 3 bulan kelas intensif kemudian gabung dengan kelas grup </li>
+      </li>sekali belajar 2 jam by zoom</li>
+      </li>Belajar 1 mentor : 3 member</li>
+      </li>Kesempatan meningkatkan kaiwa</li>
+      </li>Ada tugas harian (kanji, bunpou, dll)</li>
+      </li>Tugas di via zoom seperti bikin reibung, online (isi google form) & tulis  (kanji & bunpou)</li>
+      
+    </ul>
+
+    <div class="btn" onclick="daftar('Semi Privat N2')">Daftar</div>
+  </div>
+</div>
+</div>
+
+
+<!-- POPUP -->
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <h3 id="kelas"></h3>
+    <input id="nama" placeholder="Nama kamu"/>
+    <br><br>
+    <button onclick="kirimWA()">Kirim WhatsApp</button>
+  </div>
+</div>
+
+
+<script>
+let kelasDipilih="";
+
+function daftar(kelas){
+  kelasDipilih=kelas;
+  document.getElementById("kelas").innerText="Daftar "+kelas;
+  document.getElementById("modal").style.display="flex";
+}
+
+function kirimWA(){
+  let nama=document.getElementById("nama").value;
+
+  let pesan=`Halo, nama saya: ${nama}. Saya ingin mendaftar kelas ${kelasDipilih} di Sazanka Class.`;
+
+  let url="https://wa.me/628123970898?text="+encodeURIComponent(pesan);
+
+  window.open(url,"_blank");
+}
+</script>
+<!-- ===== PEMBAYARAN ===== -->
+<section style="margin-top:80px;padding:50px 20px;text-align:center;background:#fff6f6;">
+  <h2>Pembayaran</h2>
+
+  <div style="
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+    margin-top:20px;
+  ">
+
+    <!-- BANK 1 -->
+    <div style="
+      background:white;
+      padding:20px;
+      border-radius:14px;
+      width:260px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    ">
+      <p><b>Bank BRI</b></p>
+
+      <p id="rek1" style="font-size:18px;font-weight:bold;">
+        492401021011537
+      </p>
+
+      <p>a.n Amrianti Nur</p>
+
+      <button onclick="copyRek('rek1')" style="
+        padding:8px 14px;
+        background:#ff6b6b;
+        color:white;
+        border:none;
+        border-radius:8px;
+        cursor:pointer;
+      ">
+        Copy
+      </button>
     </div>
 
 
-    <!-- PROGRAM -->
-    <section>
-      <h2>Program Kelas</h2>
+    <!-- BANK 2 -->
+    <div style="
+      background:white;
+      padding:20px;
+      border-radius:14px;
+      width:260px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    ">
+      <p><b>Yucho Bank</b></p>
 
-      <div class="grid">
-        <div class="card">✅ Reguler N2</div>
-        <div class="card">✅ Reguler N3</div>
-        <div class="card">✅ Reguler N4</div>
-        <div class="card">🔥 Privat N2</div>
-        <div class="card">🔥 Privat N3</div>
-        <div class="card">🔥 Privat N4</div>
-      </div>
-    </section>
+      <p id="rek2" style="font-size:18px;font-weight:bold;">
+        1819045949631
+      </p>
 
+      <p>a.n ヌルアマリアラムリ</p>
 
-    <!-- HARGA -->
-    <section>
-      <h2>Harga Mulai Dari</h2>
-      <div class="card">
-        <div class="price">Rp 50.000</div>
-        <p>per sesi belajar</p>
-      </div>
-    </section>
-
-
-    <!-- CTA -->
-    <section>
-      <h2>Gabung Sekarang ✨</h2>
-      <a class="btn" href="https://wa.me/628123970898">Chat WhatsApp</a>
-    </section>
-
-    <footer>
-      © 2026 Sazanka Class | Privat Bahasa Jepang Online
-    </footer>
+      <button onclick="copyRek('rek2')" style="
+        padding:8px 14px;
+        background:#ff6b6b;
+        color:white;
+        border:none;
+        border-radius:8px;
+        cursor:pointer;
+      ">
+        Copy
+      </button>
+    </div>
 
   </div>
+</section>
+
 
 </body>
 </html>
