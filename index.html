@@ -1,33 +1,158 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <title>Kelas Sazanka</title>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sazanka Class | Privat Bahasa Jepang</title>
+
+  <style>
+    /* ===== BODY + WATERMARK BACKGROUND ===== */
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+
+      background:
+        linear-gradient(rgba(255,255,255,0.93), rgba(255,255,255,0.93)),
+        url("447514514_1057484309280715_5872012502585721037_n.jpg");
+
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      text-align: center;
+      padding: 90px 20px;
+      background: linear-gradient(135deg, #ff6b6b, #ff9f43);
+      color: white;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .hero h1 {
+      font-size: 44px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin: 10px 0 25px;
+    }
+
+    /* ===== BUTTON ===== */
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background: white;
+      color: #ff6b6b;
+      font-weight: bold;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: 0.25s;
+    }
+
+    .btn:hover {
+      transform: scale(1.06);
+    }
+
+    /* ===== SECTION ===== */
+    section {
+      margin-top: 80px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    /* ===== CARD GRID ===== */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 18px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      font-size: 16px;
+    }
+
+    .price {
+      font-size: 36px;
+      font-weight: bold;
+      color: #ff6b6b;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 80px;
+      padding: 30px;
+      font-size: 14px;
+      color: gray;
+    }
+  </style>
 </head>
-<body style="font-family: Arial; text-align:center; padding:40px;">
 
-  <h1>Halo, kami dari Sazanka 👋</h1>
-  <h2>Belajar & Privat Bahasa Jepang menuju persiapanh JLPT Tahun ini yaks... </h2>
+<body>
 
-  <p>Kami membuka kelas reguler dan privat online:</p>
+  <div class="container">
 
-  <p>
-  
-  ✅ Reguler kelas N2<br>
-  ✅ Reguler kelas N3<br>
-  ✅ Reguler Kelas N4<br>
-  ✅ Privat kelas N2<br>
-  ✅ Privat kelas N3<br>
-  ✅ Privat Kelas N4<br>
-  </p>
+    <!-- HERO -->
+    <div class="hero">
+      <h1>🌸 Sazanka Class</h1>
+      <p>Belajar Bahasa Jepang dengan santai, terarah, dan siap lulus JLPT tahun ini</p>
+      <a class="btn" href="https://wa.me/628123970898">Daftar via WhatsApp</a>
+    </div>
 
-  <h3>Harga mulai 50k / sesi</h3>
 
-  <a href="https://wa.me/628123970898">
-    <button style="padding:10px 20px; font-size:16px;">
-      Daftar via WhatsApp
-    </button>
-  </a>
+    <!-- PROGRAM -->
+    <section>
+      <h2>Program Kelas</h2>
+
+      <div class="grid">
+        <div class="card">✅ Reguler N2</div>
+        <div class="card">✅ Reguler N3</div>
+        <div class="card">✅ Reguler N4</div>
+        <div class="card">🔥 Privat N2</div>
+        <div class="card">🔥 Privat N3</div>
+        <div class="card">🔥 Privat N4</div>
+      </div>
+    </section>
+
+
+    <!-- HARGA -->
+    <section>
+      <h2>Harga Mulai Dari</h2>
+      <div class="card">
+        <div class="price">Rp 50.000</div>
+        <p>per sesi belajar</p>
+      </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section>
+      <h2>Gabung Sekarang ✨</h2>
+      <a class="btn" href="https://wa.me/628123970898">Chat WhatsApp</a>
+    </section>
+
+    <footer>
+      © 2026 Sazanka Class | Privat Bahasa Jepang Online
+    </footer>
+
+  </div>
 
 </body>
 </html>
